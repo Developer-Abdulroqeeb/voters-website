@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+
+}
+ h2{
+    color: white;
+    background-color: green;
+    padding: 10px;
+}
+.president table{
+    border: 1px solid black;
+    width: 90%;
+    border-collapse: collapse;
+    margin: 30px 0 0 30px;
+    background-color: white;
+}
+.president tr th{
+     border: 1px solid black;
+}
+.president tr td{
+    border: 1px solid black;
+    text-align: center;   
+    padding: 7px;
+}
+tr td img{
+    width: 10%;
+}
+.governor{
+    margin:2em 0 0 2em;
+max-width: calc(100vw - 9rem);
+overflow-x: auto;
+/* position: fixed; */
+}
+
+.governor table{
+    border: 1px solid black;
+    width: 50%;
+    border-collapse: collapse;
+    margin:0;
+    background-color: white;
+}
+.governor tr th{
+     border: 1px solid black;
+}
+.governor tr td{
+    border: 1px solid black;
+    text-align: center;   
+    padding: 7px;
+}
+@media (max-width:767px) {
+    .governor{
+        margin: 0;
+        max-width: calc(140vw - 9rem);
+        width: 100%;
+    }
+    .governor table{
+        width: 100%;
+    }   
+    .president table{
+        margin: 0;
+        width: 100%;
+
+    }
+    .president tr img{
+        width: 100%;
+    }
+}

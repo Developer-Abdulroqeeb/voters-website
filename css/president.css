@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+ 
+
+}
+.header h2{
+    background-color: green;
+    color: white;
+    padding: 10px;
+}
+form{
+    background-color: whitesmoke;
+}
+input{
+    width: 80%;
+    margin: 2em;
+    padding: 20px;
+    border: 0;
+    outline: 0;
+    background-color: green;
+    color: white;
+}
+form .vote{
+    width: 80%;
+    margin:2em 2em 2em 2em;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+form .vote button{
+  background-color: green;
+  width: 8%;
+  padding: 10px;
+  border: 0;
+  color: white;
+  border-radius: 10px;
+}
+form .vote button:hover{
+    background-color:gold;
+}
+@media (max-width:767px) {
+    input{
+        margin: 0;
+        width: 90%;
+        font-size: 10px;
+    }
+    form .vote {
+        width: 85%;
+        margin: 2em 2em 2em 0em;
+    }
+    form .vote button{
+        width: 25%;
+    }
+}

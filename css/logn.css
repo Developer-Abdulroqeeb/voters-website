@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+}
+.first-container{
+    background-color: green;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    box-shadow: 2px 2px 2px 2px rgb(184, 174, 174);
+}
+
+.container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 7px;
+} 
+.container .first img{
+    width: 50%;
+}
+.container .first {
+    width: 25%;
+}
+.container .first form{
+background-color: green;
+padding: 10px;
+width: 100%;
+border-radius: 10px;
+box-shadow: 2px 2px 2px 4px rgb(184, 174, 174);
+}
+.first form input[type="text"],
+input[type="password"],input[type="number"],input[type="email"],input[type="date"]{
+    width: 90%;
+    padding: 13px;
+    border-radius: 7px;
+margin-top: 10px;
+outline: 0cap;
+border: 0ch;
+}
+.first form button{
+    margin-top: 3px;
+   color: white;
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+    border: 0;
+    border-radius: 7px;
+}
+.first form button:hover{
+    background-color: goldenrod;
+    color: green;
+    transition:1s ease-in-out ;
+    cursor: progress;
+}
+.first form .show{
+    display: flex;
+    gap:10px ;
+    margin-top: 20px;
+}
+.click{
+    height: 20px;
+    width: 47px;
+    background-color: rgb(194, 181, 181);
+    border-radius: 30px;
+}
+.click::before{
+    background-color: white;
+    height:15px;
+    width: 20px;
+    content: '';
+    position: absolute;
+    border-radius: 30px;
+    margin: 3px 0 0 3px;
+    transition: 0.5s;
+}
+input:checked + .click::before{
+    transform: translateX(20px);
+}
+input:checked + .click{
+   background-color:brown ;
+ 
+}
+input[type="checkbox"]{
+    display: none;
+}
+.container .first p{
+    text-align: center;
+}
+.container .first a{
+    color: green;
+    text-decoration: none;
+}
+@media (max-width:767px){
+    .container .first{
+        width: 90%;
+    } 
+    .container .first p{
+        text-align: center;
+    }
+}
+@media (max-width:992px){
+    .container .first{
+        width: 95%;
+    }
+}

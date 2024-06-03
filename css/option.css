@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+.container{
+    display: flex;
+    gap: 20px;
+}
+/* right-container */
+.right-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 20%;
+    height:100vh;
+    padding: 20px;
+    gap: 12px;
+ background-color: green;
+ border-top-right-radius:20px;
+ border-bottom-right-radius:20px;
+   }
+.right-container .profile img{
+    height: 140px;
+    width: 140px;
+     border-radius: 50%;
+}
+.header-cont{
+    background-color: green;
+}
+.header{
+    background-color: green;
+    padding: 7px;
+    width: 75%;
+    margin: auto;
+}
+.header p{
+    color:white;
+    border-right: 9px solid black;
+    animation: typing 12s steps(45) infinite ;
+    white-space: nowrap;
+   overflow: hidden;
+   font-size: 20px;
+}
+@keyframes typing{
+    from{
+        width: 0%;
+       } 
+     to  {
+        width:82%;
+       }
+    }
+   .registration a{
+    display: flex;
+  align-items: center;
+    gap: 10px;
+    color: black;
+    text-decoration: none;
+    background-color: whitesmoke;
+    margin-top: 10px;
+    padding: 7px;
+    width: 70%;
+    border-radius: 10px;
+     box-shadow: 2px 2px 2px 2px rgb(158, 111, 111);
+   }
+   .registration a:hover{
+    background-color: green;
+    color: white;
+    transition: 1s ease;
+   }
+ .registration a i{
+     color:green;
+    }
+
+   /* left-container */
+.left-container{
+    background-color: white;
+    width: 73%;
+    margin-top: 20px;
+    padding: 10px;
+     border-radius: 10px;
+     box-shadow: 2px 2px 2px 4px rgb(215, 209, 209);
+}
+   /* .left-container .dashboard */
+   .left-container .dashboard{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 10px;
+     border-radius: 10px;
+   }
+   .dashboard .side-logo img{
+    width:50%;
+   }
+.dashboard .menu{
+    display: flex;
+    gap: 20px;
+}
+.dashboard .menu a{
+    text-decoration: none;
+    font-size: 20px;
+    color:green;
+}
+.dashboard .menu .fa-bars{
+    display: none;
+}
+.left-container .news-letter{
+    background-color: green;
+    color: white;
+    margin-top: 30px;
+    padding: 10px;
+   border-radius: 20px;
+}
+.left-container h2{
+    text-align: center;
+    margin-top: 10px;
+}
+.left-container .election-type{
+    display: grid;
+    grid-template-columns: repeat(3,4fr);
+    gap:20px;
+    margin-top: 20px;
+}
+.left-container .election-type a{
+color: green;
+background: white;
+padding: 14px;
+text-decoration: none;
+text-align: center;
+box-shadow: 2px 2px 2px 2px rgb(195, 187, 187);
+border-radius: 10px;
+}
+@media (max-width:767px) {
+    .dashboard .menu .fa-bars{
+        display: block;
+        color: green;
+        margin-top: 6px;
+        transition: 5s;
+    }
+    .header-cont{
+       width: 100%;
+    }
+    .header p{
+        font-size: 8px;
+        text-align: right;
+        margin: 0%;
+    }
+  .container .right-container{
+        display: none;
+        padding: 1em 0em 2em 1em;
+        width: 70%; 
+        background-color: green;
+        box-shadow: 2px 2px 2px 2px rgb(175, 167, 167);
+        z-index: 99;
+        position: fixed;
+        gap: 20px;
+        
+    }
+    .container .right-container.show{
+        display:block;
+        
+    }
+    .left-container .election-type{
+        grid-template-columns: repeat(1,6fr);
+    }
+    .dashboard .side-logo img{
+        width: 30%;
+    }
+    .left-container{
+        width: 93%;
+    }
+}
